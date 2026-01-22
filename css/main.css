@@ -456,7 +456,7 @@ body {
 .new .section-02 .swiper-pagination {
     position: absolute;
     bottom: 20px;
-    left: 75%;
+    left: 65%;
     transform: translateX(-50%);
 }
 /* 기본 동그라미 색상 */
