@@ -377,7 +377,7 @@ body {
     width: 100%;
     height: 650px;
     margin-top: 30px;
-    margin-bottom: 150px;
+    margin-bottom: 250px;
 }
 .new .section-02 .swiper-slide {
     width: 100%;
@@ -456,7 +456,7 @@ body {
 .new .section-02 .swiper-pagination {
     position: absolute;
     bottom: 5px;
-    left: 75%;
+    left: 80%;
     transform: translateX(-50%);
 }
 /* 기본 동그라미 색상 */
@@ -475,7 +475,7 @@ body {
 .routine {
     max-width: 1600px;
     width: 100%;
-    margin: 0 auto;
+    margin: 0 auto 200px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -495,6 +495,7 @@ body {
     width: 100%;
     height: 683px;
     margin-top: 30px;
+    position: relative;
 }
 
 .routine .section-03 .swiper-slide{
@@ -504,12 +505,12 @@ body {
 }
 
 .routine .section-03 .swiper-slide img{
-    width: 1000px;
+    width: 870px;
     height: 600px;
     margin-right: 30px;
 }
 .routine .section-03 .swiper-slide .item{
-    width: 571px;
+    width: 700px;
     display: flex;
     flex-direction: column;
     gap: 20px;
@@ -518,10 +519,19 @@ body {
     height: 180px;
     display: flex;
     align-items: center;
+    border: 1px solid transparent;
+    box-sizing: border-box;
+    transition: 
+        border-color 0.2s ease,
+        box-shadow 0.2s ease;
+}
+.routine .section-03 .swiper-slide .item .box:hover{
+    border-color: #d1d1d1;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.06);
 }
 .routine .section-03 .swiper-slide .item .box img{
     width: 180px;
-    height: 180px;
+    height: 178px;
     display: block;
     margin-right: 20px;
 }
@@ -531,29 +541,30 @@ body {
 }
 .routine .section-03 .swiper-slide .item .box .text span{
     font-family: 'Aclonica';
-    font-size: 16px;
+    font-size: 18px;
     color: #8FB7D7;
     font-weight: 500;
-    margin-bottom: 8px;
+    margin-bottom: 15px;
 }
 .routine .section-03 .swiper-slide .item .box .text h3{
     font-size: 19px;
     font-weight: 600;
     color: #333333;
-    margin-bottom: 10px;
+    margin-bottom: 12px;
+    white-space: nowrap;
 }
 .routine .section-03 .swiper-slide .item .box .text p{
-    font-size: 14px;
+    font-size: 16px;
     color: #b7b7b7;
     margin-bottom: 30px;
 }
 .routine .section-03 .swiper-slide .item .box .text b{
-    font-size: 20px;
+    font-size: 23px;
     color: #333333;
 }
 .routine .section-03 .swiper-pagination {
-    position: static;
-    margin-bottom: 10px;
+    position: relative;
+    margin-top: 20px;
     text-align: center;
 }
 /* 기본 동그라미 색상 */
