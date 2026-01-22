@@ -454,24 +454,28 @@ body {
     border: none;
 }
 
-.new .section-02 .swiper-pagination {
+
+.new .section-02 .swiper-slide .item .swiper-pagination {
     position: absolute;
-    bottom: 20px; /* 아이템 밑 */
-    left: 650px;  /* 이미지 너비 만큼 오른쪽으로 이동 */
-    width: 800px; /* 아이템 너비만큼 영역 지정 */
+    bottom: -60px;
+    left: 50%;
+    transform: translateX(-50%);
     display: flex;
-    justify-content: center; /* 가운데 정렬 */
+    justify-content: center;
+    gap: 10px;
 }
 
-/* 기본 동그라미 색상 */
-.swiper-slide .item .swiper-pagination-bullet {
-    background-color: #ccc; 
+.swiper-pagination-bullet {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #ccc;
 }
 
-/* 활성 슬라이드 동그라미 색상 */
-.swiper-slide .item .swiper-pagination-bullet-active {
-    background-color: #8FB7D7; 
+.swiper-pagination-bullet-active {
+    background-color: #8FB7D7;
 }
+
 
 
 

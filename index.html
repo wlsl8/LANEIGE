@@ -27,25 +27,49 @@
 
             var swiper = new Swiper(".newitem", {
                 slidesPerView: 1,
-                spaceBetween: 0,
                 loop: true,
-                centeredSlides: true,
                 autoplay: {
                     delay: 3500,
-                    disableoninteraction: false
+                    disableOnInteraction: false,
                 },
                 navigation: {
                     nextEl: '.swiper-button-next',
                     prevEl: '.swiper-button-prev'
                 },
-                pagination: {
-                    el: '.new .section-02 .swiper-pagination', // 전체 기준 하나
-                    clickable: true,
-                    renderBullet: function (index, className) {
-                        return '<span class="' + className + '"></span>';
+                on: {
+                    init: function () {
+                        this.slides.forEach((slide, index) => {
+                            const paginationEl = slide.querySelector('.swiper-pagination');
+                            if (paginationEl) {
+                                paginationEl.innerHTML = ''; // 기존 제거
+                                for (let i = 0; i < this.slides.length; i++) {
+                                    const bullet = document.createElement('span');
+                                    bullet.classList.add('swiper-pagination-bullet');
+                                    if (i === this.realIndex) bullet.classList.add('swiper-pagination-bullet-active');
+                                    paginationEl.appendChild(bullet);
+                                }
+                            }
+                        });
                     },
-                },
+                    slideChange: function () {
+                        const realIndex = this.realIndex; // 루프 모드에서 실제 슬라이드 index
+                        this.slides.forEach(slide => {
+                            const bullets = slide.querySelectorAll('.swiper-pagination-bullet');
+                            bullets.forEach(b => b.classList.remove('swiper-pagination-bullet-active'));
+                        });
+                        const activeSlide = this.slides[this.activeIndex];
+                        const activeBullets = activeSlide.querySelectorAll('.swiper-pagination-bullet');
+                        if (activeBullets.length) {
+                            activeBullets[realIndex].classList.add('swiper-pagination-bullet-active');
+                        }
+                    }
+                }
             });
+
+
+
+
+
             var swiper = new Swiper(".routineitem", {
                 slidesPerView: 1,
                 spaceBetween: 0,
@@ -64,6 +88,7 @@
                 },
                 loop: true,
             });
+
             var swiper = new Swiper(".laneigelbll", {
                 slidesPerView: 1,
                 spaceBetween: 0,
@@ -247,6 +272,8 @@
                                 <img src="img/newitem.png" alt="">
                                 <span>더 강력해진 ‘주름세럼’, ‘탄력세럼’, ‘광채세럼’을 한병에 담아, <br> 매끈하고 탄력있는 피부로 가꿔주는 NEW 트리플샷 세럼</span>
                                 <a href="#"><b>+ Shop</b></a>
+                                <div class="swiper-pagination"></div>
+
                             </div><!-- item end -->
                         </div><!-- swiper-slide end -->
                         <div class="swiper-slide">
@@ -264,6 +291,8 @@
                                 <img src="img/newitem2.png" alt="">
                                 <span>끈적임 없는 반전 젤리 텍스처가 탱글한 입술로 가꿔주는 <br> 퍼밍 립 트리트먼트</span>
                                 <a href="#"><b>+ Shop</b></a>
+                                <div class="swiper-pagination"></div>
+
                             </div><!-- item end -->
                         </div><!-- swiper-slide end -->
                         <div class="swiper-slide">
@@ -283,6 +312,8 @@
                                     붓기
                                     완화 및 주름 개선에 도움을 주는 기능성 아이 슬리핑 마스크</span>
                                 <a href="#"><b>+ Shop</b></a>
+                                <div class="swiper-pagination"></div>
+
                             </div><!-- item end -->
                         </div><!-- swiper-slide end -->
                         <div class="swiper-slide">
@@ -300,6 +331,8 @@
                                 <img src="img/newitem4.png" alt="">
                                 <span>지친 피부에 탱탱한 생기와 탄력을 부여하여 푹 잔 듯, <br> 탄탄하게 빛나는 피부로 가꿔주는 기능성 슬리핑 마스크</span>
                                 <a href="#"><b>+ Shop</b></a>
+                                <div class="swiper-pagination"></div>
+
                             </div><!-- item end -->
                         </div><!-- swiper-slide end -->
                         <div class="swiper-slide">
@@ -317,6 +350,8 @@
                                 <img src="img/newitem5.png" alt="">
                                 <span>미세한 마이크로 입자가 뭉침 없이 투명하게 블러링 되어 피부 결을 <br> 매끄럽게 정돈해주는 라네즈 네오 라인의 피니시 파우더</span>
                                 <a href="#"><b>+ Shop</b></a>
+                                <div class="swiper-pagination"></div>
+
                             </div><!-- item end -->
                         </div><!-- swiper-slide end -->
                         <div class="swiper-slide">
@@ -334,6 +369,8 @@
                                 <img src="img/newitem6.png" alt="">
                                 <span>건조로 생기 잃은 푸석한 피부를 위해 탄탄한 피부 장벽과 <br> 맑은 피부광을 선사 해주는 크림</span>
                                 <a href="#"><b>+ Shop</b></a>
+                                <div class="swiper-pagination"></div>
+
                             </div><!-- item end -->
                         </div><!-- swiper-slide end -->
                         <div class="swiper-slide">
@@ -351,6 +388,8 @@
                                 <img src="img/newitem7.png" alt="">
                                 <span>붉은기, 가려움까지 온 극건조 피부를 위해 <br> 손상 피부 장벽을 빠르게 개선시켜주는 크림</span>
                                 <a href="#"><b>+ Shop</b></a>
+                                <div class="swiper-pagination"></div>
+
                             </div><!-- item end -->
                         </div><!-- swiper-slide end -->
                         <div class="swiper-slide">
@@ -368,10 +407,10 @@
                                 <img src="img/newitem8.png" alt="">
                                 <span>번들거리는 지성 피부에 유수분 밸런스를 맞춰 주고 <br> 산뜻한 수분감으로 진정 효과를 주는 크림</span>
                                 <a href="#"><b>+ Shop</b></a>
+                                <div class="swiper-pagination"></div>
                             </div><!-- item end -->
                         </div><!-- swiper-slide end -->
                     </div>
-                    <div class="swiper-pagination"></div>
                 </div>
             </section><!-- section-02 end -->
         </div><!-- new end -->
