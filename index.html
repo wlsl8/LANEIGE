@@ -86,23 +86,23 @@
                 loop: true,
             });
 
+
+            var slideTitles = ["01. SUSTAINABILITY", "02. BESPOKE NEO", "03. MEETS ARTS", "04. LBLL"];
+
             var swiper = new Swiper(".laneigelbll", {
                 slidesPerView: 1,
-                spaceBetween: 0,
                 loop: true,
-                autoplay: {
-                    delay: 3500,
-                    disableoninteraction: false
-                },
+                autoplay: { delay: 3500, disableOnInteraction: false },
                 pagination: {
                     el: '.swiper-pagination',
-                    clickable: true
-                },
-                scrollbar: {
-                    el: ".swiper-scrollbar",
-                    hide: true,
-                },
+                    clickable: true,
+                    renderBullet: function (index, className) {
+                        return '<span class="' + className + '"><span>' + slideTitles[index] + '</span></span>';
+                    }
+                }
             });
+
+
         };
     </script>
 </head>
@@ -305,7 +305,8 @@
                                     </li>
                                 </ul>
                                 <img src="img/newitem3.png" alt="">
-                                <span>피오니 & 콜라겐 콤플렉스™와 펩타이드, 카페인 성분이 바르는 순간 터지며 즉각적 쿨링 효과를 주는 <br> 수분 캡슐 제형과 만나 눈가붓기 완화 및 주름 개선에 도움을 주는 기능성 아이 슬리핑 마스크</span>
+                                <span>피오니 & 콜라겐 콤플렉스™와 펩타이드, 카페인 성분이 바르는 순간 터지며 즉각적 쿨링 효과를 주는 <br> 수분 캡슐 제형과 만나 눈가붓기 완화
+                                    및 주름 개선에 도움을 주는 기능성 아이 슬리핑 마스크</span>
                                 <a href="#"><b>+ Shop</b></a>
                                 <div class="swiper-pagination"></div>
 
@@ -657,6 +658,7 @@
                             </div><!-- text end -->
                         </div><!-- swiper-slide end -->
                     </div><!-- swiper-wrapper end -->
+                    <div class="swiper-pagination"></div>
                     <div class="swiper-scrollbar"></div>
                 </div>
             </section><!-- section-04 end -->
