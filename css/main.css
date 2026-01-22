@@ -377,7 +377,7 @@ body {
     width: 100%;
     height: 650px;
     margin-top: 30px;
-    margin-bottom: 250px;
+    margin-bottom: 150px;
 }
 .new .section-02 .swiper-slide {
     width: 100%;
@@ -386,13 +386,13 @@ body {
 }
 
 .new .section-02 .swiper-slide img {
-    width: 600px;
-    height: 650px;
-    margin-right: 135px;
+    width: 650px;
+    height: 700px;
+    margin-right: 200px;
 }
 
 .new .section-02 .swiper-slide .item {
-    width: 589px;
+    width: 800px;
     display: flex;
     flex-direction: column;
     text-align: center;
@@ -402,7 +402,7 @@ body {
 
 .new .section-02 .swiper-slide .item h3 {
     font-family: 'Aclonica';
-    font-size: 35px;
+    font-size: 40px;
     line-height: 1.2;
     font-weight: bold;
     color: #333333;
@@ -411,7 +411,7 @@ body {
 }
 
 .new .section-02 .swiper-slide .item ul{
-    font-size: 16px;
+    font-size: 17px;
     color: #828282;
     display: flex;
     flex-direction: column;
@@ -422,7 +422,7 @@ body {
 
 .new .section-02 .swiper-slide .item img {
     width: 370px;
-    height: 270px;
+    height: 300px;
     margin: 0 auto;
     display: block;
 }
@@ -455,8 +455,8 @@ body {
 
 .new .section-02 .swiper-pagination {
     position: absolute;
-    bottom: 20px;
-    left: 65%;
+    bottom: 5px;
+    left: 75%;
     transform: translateX(-50%);
 }
 /* 기본 동그라미 색상 */
