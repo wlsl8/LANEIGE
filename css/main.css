@@ -403,11 +403,11 @@ body {
 
 .new .section-02 .swiper-slide .item h3 {
     font-family: 'Aclonica';
-    font-size: 40px;
+    font-size: 38px;
     line-height: 1.2;
     font-weight: bold;
     color: #333333;
-    margin-bottom: 20px;
+    margin-bottom: 17px;
     white-space: nowrap;
 }
 
@@ -433,7 +433,6 @@ body {
     line-height: 1.4;
     color: #333333;
     font-weight: 500;
-    margin-top: 10px;
     margin-bottom: 20px;
 }
 
