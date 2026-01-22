@@ -381,7 +381,7 @@ body {
     width: 100%;
     height: 650px;
     margin-top: 30px;
-    margin-bottom: 250px;
+    margin-bottom: 280px;
 }
 .new .section-02 .swiper-slide {
     width: 100%;
@@ -390,8 +390,8 @@ body {
 }
 
 .new .section-02 .swiper-slide img {
-    width: 650px;
-    height: 700px;
+    width: 600px;
+    height: 650px;
     margin-right: 100px;
 }
 
@@ -411,7 +411,7 @@ body {
     line-height: 1.2;
     font-weight: bold;
     color: #333333;
-    margin-bottom: 20px;
+    margin-bottom: 17px;
     white-space: nowrap;
 }
 
@@ -434,7 +434,7 @@ body {
 }
 
 .new .section-02 .swiper-slide .item span {
-    font-size: 17px;
+    font-size: 16px;
     line-height: 1.4;
     color: #333333;
     font-weight: 500;
@@ -470,8 +470,8 @@ body {
 }
 
 .swiper-pagination-bullet {
-    width: 10px;
-    height: 10px;
+    width: 8px;
+    height: 8px;
     border-radius: 50%;
     background-color: #ccc;
 }
@@ -524,12 +524,13 @@ body {
     margin-right: 30px;
 }
 .routine .section-03 .swiper-slide .item{
-    width: 700px;
+    width: 470px;
     display: flex;
     flex-direction: column;
     gap: 20px;
 }
 .routine .section-03 .swiper-slide .item .box{
+    width: 470px;
     height: 180px;
     display: flex;
     align-items: center;
@@ -550,6 +551,7 @@ body {
     margin-right: 20px;
 }
 .routine .section-03 .swiper-slide .item .box .text{
+    width: 270px;
     display: flex;
     flex-direction: column;
 }
@@ -561,11 +563,13 @@ body {
     margin-bottom: 15px;
 }
 .routine .section-03 .swiper-slide .item .box .text h3{
-    font-size: 19px;
+    font-size: 18px;
     font-weight: 600;
     color: #333333;
     margin-bottom: 12px;
     white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 .routine .section-03 .swiper-slide .item .box .text p{
     font-size: 16px;
@@ -573,7 +577,7 @@ body {
     margin-bottom: 30px;
 }
 .routine .section-03 .swiper-slide .item .box .text b{
-    font-size: 23px;
+    font-size: 21px;
     color: #333333;
 }
 .routine .section-03 .swiper-pagination {
@@ -591,3 +595,30 @@ body {
 }
 
 
+
+/* .routine {
+    max-width: 1600px;
+    min-width: 1024px;
+    width: 100%;
+    margin: 0 auto 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.routine .section-03{
+    max-width: 1600px;
+    min-width: 1024px;
+    width: 100%;
+    height: 683px;
+    margin-top: 30px;
+    position: relative;
+} */
+
+.lbll{}
+.lbll .section-04{}
+.lbll .section-04 .swiper-slide{}
+.lbll .section-04 .swiper-slide img{}
+.lbll .section-04 .swiper-slide .text{}
+.lbll .section-04 .swiper-slide .text h3{}
+.lbll .section-04 .swiper-slide .text b{}
+.lbll .section-04 .swiper-slide .text p{}
