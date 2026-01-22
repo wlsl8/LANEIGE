@@ -11,16 +11,16 @@
     <script>
         window.onload = () => {
             var swiper = new Swiper(".mySwiper", {
-                slidesPerView: 'auto',    
-                spaceBetween: 20,          
-                centeredSlides: true,      
+                slidesPerView: 'auto',
+                spaceBetween: 20,
+                centeredSlides: true,
                 pagination: {
                     el: ".swiper-pagination",
                     clickable: true,
                 },
                 autoplay: {
                     delay: 3000,
-                    disableOnInteraction: false   
+                    disableOnInteraction: false
                 },
                 loop: true
             });
@@ -39,9 +39,12 @@
                     prevEl: '.swiper-button-prev'
                 },
                 pagination: {
-                    el: '.swiper-pagination',
-                    clickable: true
-                }
+                    el: '.new .section-02 .swiper-pagination', // 전체 기준 하나
+                    clickable: true,
+                    renderBullet: function (index, className) {
+                        return '<span class="' + className + '"></span>';
+                    },
+                },
             });
             var swiper = new Swiper(".routineitem", {
                 slidesPerView: 1,
@@ -234,8 +237,12 @@
                             <div class="item">
                                 <h3>PERFECT RENEW 3X SIGNATURE <br> SERUM ADVANCED</h3>
                                 <ul>
-                                    <li><p>#안티에이징세럼</p></li>
-                                    <li><p>#NEW트리플샷세럼</p></li>
+                                    <li>
+                                        <p>#안티에이징세럼</p>
+                                    </li>
+                                    <li>
+                                        <p>#NEW트리플샷세럼</p>
+                                    </li>
                                 </ul>
                                 <img src="img/newitem.png" alt="">
                                 <span>더 강력해진 ‘주름세럼’, ‘탄력세럼’, ‘광채세럼’을 한병에 담아, <br> 매끈하고 탄력있는 피부로 가꿔주는 NEW 트리플샷 세럼</span>
@@ -247,8 +254,12 @@
                             <div class="item">
                                 <h3>BOUNCY & <br> FIRM LIP TREATMENT</h3>
                                 <ul>
-                                    <li><p>#퍼밍 립</p></li>
-                                    <li><p>#립 트린트먼트</p></li>
+                                    <li>
+                                        <p>#퍼밍 립</p>
+                                    </li>
+                                    <li>
+                                        <p>#립 트린트먼트</p>
+                                    </li>
                                 </ul>
                                 <img src="img/newitem2.png" alt="">
                                 <span>끈적임 없는 반전 젤리 텍스처가 탱글한 입술로 가꿔주는 <br> 퍼밍 립 트리트먼트</span>
@@ -260,8 +271,12 @@
                             <div class="item">
                                 <h3>BOUNCY & <br> FIRM EYE SLEEPING MASK</h3>
                                 <ul>
-                                    <li><p>#즉각쿨링</p></li>
-                                    <li><p>#저자극마스크</p></li>
+                                    <li>
+                                        <p>#즉각쿨링</p>
+                                    </li>
+                                    <li>
+                                        <p>#저자극마스크</p>
+                                    </li>
                                 </ul>
                                 <img src="img/newitem3.png" alt="">
                                 <span>피오니 & 콜라겐 콤플렉스™와 펩타이드, 카페인 성분이 바르는 순간 <br> 터지며 즉각적 쿨링 효과를 주는 수분 캡슐 제형과 만나 <br> 눈가
@@ -275,8 +290,12 @@
                             <div class="item">
                                 <h3>BOUNCY & <br> FIRM FACE SLEEPING MASK</h3>
                                 <ul>
-                                    <li><p>#퍼밍 마스크</p></li>
-                                    <li><p>#오버나이트마스크</p></li>
+                                    <li>
+                                        <p>#퍼밍 마스크</p>
+                                    </li>
+                                    <li>
+                                        <p>#오버나이트마스크</p>
+                                    </li>
                                 </ul>
                                 <img src="img/newitem4.png" alt="">
                                 <span>지친 피부에 탱탱한 생기와 탄력을 부여하여 푹 잔 듯, <br> 탄탄하게 빛나는 피부로 가꿔주는 기능성 슬리핑 마스크</span>
@@ -288,8 +307,12 @@
                             <div class="item">
                                 <h3>NEO ESSENTIAL <br> BLURRING FINISH POWDER</h3>
                                 <ul>
-                                    <li><p>#보습파우더</p></li>
-                                    <li><p>#가루날림ZERO</p></li>
+                                    <li>
+                                        <p>#보습파우더</p>
+                                    </li>
+                                    <li>
+                                        <p>#가루날림ZERO</p>
+                                    </li>
                                 </ul>
                                 <img src="img/newitem5.png" alt="">
                                 <span>미세한 마이크로 입자가 뭉침 없이 투명하게 블러링 되어 피부 결을 <br> 매끄럽게 정돈해주는 라네즈 네오 라인의 피니시 파우더</span>
@@ -301,8 +324,12 @@
                             <div class="item">
                                 <h3>WATER BANK BLUE <br> HYALURONIC MOISTURE CREAM</h3>
                                 <ul>
-                                    <li><p>#탄탄장벽크림</p></li>
-                                    <li><p>#속보습크림</p></li>
+                                    <li>
+                                        <p>#탄탄장벽크림</p>
+                                    </li>
+                                    <li>
+                                        <p>#속보습크림</p>
+                                    </li>
                                 </ul>
                                 <img src="img/newitem6.png" alt="">
                                 <span>건조로 생기 잃은 푸석한 피부를 위해 탄탄한 피부 장벽과 <br> 맑은 피부광을 선사 해주는 크림</span>
@@ -314,8 +341,12 @@
                             <div class="item">
                                 <h3>WATER BANK BLUE <br> HYALURONIC INTENSIVE CREAM</h3>
                                 <ul>
-                                    <li><p>#장벽리페어크림</p></li>
-                                    <li><p>#극건조크림</p></li>
+                                    <li>
+                                        <p>#장벽리페어크림</p>
+                                    </li>
+                                    <li>
+                                        <p>#극건조크림</p>
+                                    </li>
                                 </ul>
                                 <img src="img/newitem7.png" alt="">
                                 <span>붉은기, 가려움까지 온 극건조 피부를 위해 <br> 손상 피부 장벽을 빠르게 개선시켜주는 크림</span>
@@ -327,8 +358,12 @@
                             <div class="item">
                                 <h3>WATER BANK BLUE <br> HYALURONIC GEL CREAM</h3>
                                 <ul>
-                                    <li><p>#수딩젤크림</p></li>
-                                    <li><p>#유수분밸런스크림</p></li>
+                                    <li>
+                                        <p>#수딩젤크림</p>
+                                    </li>
+                                    <li>
+                                        <p>#유수분밸런스크림</p>
+                                    </li>
                                 </ul>
                                 <img src="img/newitem8.png" alt="">
                                 <span>번들거리는 지성 피부에 유수분 밸런스를 맞춰 주고 <br> 산뜻한 수분감으로 진정 효과를 주는 크림</span>
