@@ -567,7 +567,7 @@ body {
     width: 500px;
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    gap: 30px;
 }
 
 .routine .section-03 .swiper-slide .item .box {
