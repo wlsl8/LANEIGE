@@ -602,7 +602,7 @@ body {
     width: 270px;
     display: flex;
     flex-direction: column;
-    padding-right: 30px;
+    padding-right: 20px;
 }
 
 .routine .section-03 .swiper-slide .item .box .text span {
