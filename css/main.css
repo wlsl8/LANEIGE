@@ -402,7 +402,6 @@ body {
 
 .new {
     max-width: 1600px;
-    min-width: 1440px;
     width: 100%;
     margin: 0 auto;
     display: flex;
@@ -421,7 +420,6 @@ body {
 
 .new .section-02 {
     max-width: 1600px;
-    min-width: 1440px;
     width: 100%;
     height: 650px;
     margin: 30px auto 280px;
@@ -429,6 +427,7 @@ body {
 
 .new .section-02 .swiper-slide {
     width: 100%;
+    max-width: 1600px;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -528,7 +527,6 @@ body {
 
 .routine {
     max-width: 1600px;
-    min-width: 1440px;
     width: 100%;
     margin: 0 auto 200px;
     display: flex;
@@ -547,7 +545,6 @@ body {
 
 .routine .section-03 {
     max-width: 1600px;
-    min-width: 1440px;
     width: 100%;
     height: 683px;
     margin-top: 30px;
@@ -652,14 +649,12 @@ body {
 
 .lbll {
     max-width: 1600px;
-    min-width: 1440px;
     width: 100%;
     margin: 0 auto;
 }
 
 .lbll .section-04 {
     max-width: 1600px;
-    min-width: 1440px;
     width: 100%;
     position: relative;
 }
