@@ -69,10 +69,9 @@
             var swiper = new Swiper(".routineitem", {
                 slidesPerView: 1,
                 spaceBetween: 0,
-                centeredSlides: true,
                 autoplay: {
                     delay: 4000,
-                    disableoninteraction: false
+                    disableOnInteraction: false
                 },
                 navigation: {
                     nextEl: '.swiper-button-next',
@@ -83,6 +82,7 @@
                     clickable: true
                 },
                 loop: true,
+                roundLengths: true,
             });
 
             var slideTitles = ["01. SUSTAINABILITY", "02. BESPOKE NEO", "03. MEETS ARTS", "04. LBLL"];

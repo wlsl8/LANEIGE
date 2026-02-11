@@ -274,11 +274,13 @@ body {
     min-width: 1440px;
     width: 100%;
     margin: 110px auto 0;
-    padding: 0 70px;
+    /* padding: 0 70px; */
     position: relative;
     height: auto;
 }
-
+.main .main_visual{
+    padding: 0 70px;
+}
 .main .main_visual img {
     width: 100%;
     height: auto;
@@ -307,6 +309,7 @@ body {
 
 .best {
     margin-top: 250px;
+    padding: 0 70px;
 }
 
 .best h4 {
@@ -404,6 +407,7 @@ body {
     max-width: 1600px;
     width: 100%;
     margin: 0 auto;
+    padding: 0 70px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -529,6 +533,7 @@ body {
     max-width: 1600px;
     width: 100%;
     margin: 0 auto 200px;
+    padding: 0 70px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -549,6 +554,7 @@ body {
     height: 683px;
     margin-top: 30px;
     position: relative;
+    overflow: hidden;
 }
 
 .routine .section-03 .swiper-slide {
@@ -556,12 +562,13 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    flex-shrink: 0;
 }
 
 .routine .section-03 .swiper-slide img {
-    width: 850px;
+    width: 840px;
     height: 600px;
-    margin-right: 20px;
+    margin-right: 10px;
 }
 
 .routine .section-03 .swiper-slide .item {
@@ -599,7 +606,7 @@ body {
 }
 
 .routine .section-03 .swiper-slide .item .box .text {
-    width: 270px;
+    width: 300px;
     display: flex;
     flex-direction: column;
     padding-right: 20px;
