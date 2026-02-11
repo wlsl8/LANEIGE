@@ -431,10 +431,10 @@ body {
 
 .new .section-02 .swiper-slide {
     width: 100%;
-    max-width: 1600px;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    flex-shrink: 0;
 }
 
 .new .section-02 .swiper-slide img {
